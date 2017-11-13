@@ -15,6 +15,44 @@ public class Car {
                int price,
                int year) {
         this.transmission = transmission;
-        this.state
+        this.state = state;
+        this.name = name;
+        this.model = model;
+        this.color = color;
+        this.price = price;
+        this.year = year;
+    }
+
+    public Transmission getTransmission() {
+        return transmission;
+    }
+
+    public State getState() {
+        return state;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public Car setPrice(int newPrice) {
+        this.price = newPrice;
+        return this;
     }
 }
