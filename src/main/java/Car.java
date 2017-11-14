@@ -1,55 +1,35 @@
 public class Car {
-    private Transmission transmission;
-    private State state;
-    private String name;
-    private String model;
-    private String color;
+    private String id;
     private int price;
     private int year;
+    private CarSpec spec;
 
     public Car(Transmission transmission,
+               String id,
                State state,
-               String name,
-               String model,
-               String color,
+               Name name,
+               Color color,
                int price,
                int year) {
-        this.transmission = transmission;
-        this.state = state;
-        this.name = name;
-        this.model = model;
-        this.color = color;
+        this.id = id;
         this.price = price;
         this.year = year;
+        this.spec = new CarSpec(transmission, state, name, color);
     }
 
-    public Transmission getTransmission() {
-        return transmission;
-    }
 
-    public State getState() {
-        return state;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public String getColor() {
-        return color;
-    }
 
     public int getPrice() {
         return price;
     }
 
+    public CarSpec getSpec() { return spec; }
+
     public int getYear() {
         return year;
     }
+
+    public String getId() { return id; }
 
     public Car setPrice(int newPrice) {
         this.price = newPrice;
