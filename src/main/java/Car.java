@@ -31,8 +31,8 @@ public class Car {
 
     public String getId() { return id; }
 
-    public Car setPrice(int newPrice) {
+    public int setPrice(int newPrice) {
         this.price = newPrice;
-        return this;
+        return price;
     }
 }

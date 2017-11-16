@@ -1,8 +1,9 @@
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
 public class FindCar {
-    protected static void findCar(Car wantedCar, Inventory inventory) {
+    protected static List<Car> findCar(Car wantedCar, Inventory inventory) {
         List matchingCars = inventory.search(wantedCar);
         if (!matchingCars.isEmpty()) {
             System.out.println("You may like these cars: ");
@@ -15,7 +16,7 @@ public class FindCar {
         } else {
             System.out.println("It's a pity, but we don't have such a car that You'd like to have.");
         }
-
+        return matchingCars;
     }
 
     public static void main(String[] args) {
@@ -30,6 +31,8 @@ public class FindCar {
                 Color.GREEN, 45000, 1998);
         FindCar findcar = new FindCar();
         findcar.findCar(car, inventory);
+
+
 
 
     }

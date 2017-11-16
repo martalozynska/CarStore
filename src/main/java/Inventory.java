@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Inventory {
-    private List<Car> cars;
+    protected List<Car> cars;
 
     public Inventory() {
         cars = new LinkedList();
@@ -30,7 +30,7 @@ public class Inventory {
         return null;
     }
 
-    public List search(Car wantedCar) {
+    public List search(Car wantedCar){
         List<Car> matchingCars = new ArrayList<Car>();
         for (Iterator i = cars.iterator(); i.hasNext(); ) {
             Car car = (Car)i.next();
