@@ -1,6 +1,8 @@
 package Users;
 
-public class User {
+import Observer.Observer;
+
+public class User implements Observer {
         private String name;
         private String surname;
         private String phone;
@@ -21,5 +23,11 @@ public class User {
 
     public String getPhone() {
         return phone;
+    }
+
+
+    @Override
+    public void update() {
+        System.out.println(this.name + ", there's new update.");
     }
 }
