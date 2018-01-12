@@ -1,3 +1,5 @@
+package Car;
+
 public enum State {
     BAD, SATISFACTORY, GOOD, PERFECT;
 

@@ -1,9 +1,10 @@
-import java.util.ArrayList;
+package Car;
+
 import java.util.Iterator;
 import java.util.List;
 
 public class FindCar {
-    protected static List<Car> findCar(Car wantedCar, Inventory inventory) {
+    public static List<Car> findCar(Car wantedCar, Inventory inventory) {
         List matchingCars = inventory.search(wantedCar);
         if (!matchingCars.isEmpty()) {
             System.out.println("You may like these cars: ");

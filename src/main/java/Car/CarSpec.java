@@ -1,3 +1,5 @@
+package Car;
+
 public class CarSpec {
     private Transmission transmission;
     private State state;

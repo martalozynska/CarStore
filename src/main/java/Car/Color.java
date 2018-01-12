@@ -1,3 +1,5 @@
+package Car;
+
 public enum Color {
     RED, WHITE, BLACK, GREEN, BROWN;
     public String toString() {

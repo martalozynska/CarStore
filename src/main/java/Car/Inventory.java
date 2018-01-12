@@ -1,3 +1,5 @@
+package Car;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -5,7 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Inventory {
-    protected List<Car> cars;
+    public List<Car> cars;
 
     public Inventory() {
         cars = new LinkedList();
